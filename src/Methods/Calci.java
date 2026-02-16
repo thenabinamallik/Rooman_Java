@@ -6,10 +6,10 @@ package Methods;
 public class Calci {
 	public static void main(String[] args) {
 		Calci c = new Calci();
-		c.add();
-		System.out.println(c.sub());
-		c.mul(12, 2);
-		System.out.println(c.div(12, 3));
+		c.add();                             // Point 1
+		System.out.println(c.sub());        //  Point 2 
+		c.mul(12, 2);                      //   Point 3
+		System.out.println(c.div(12, 3)); //    Point 4
 	}
 	
 	
@@ -20,7 +20,7 @@ public class Calci {
 	}
 	
 	
-	// 2. Takes No Input Gives No Output
+	// 2. Takes No Input Gives Output
 	public int sub(){
 		int a = 20, b = 10;
 		return a-b;	
