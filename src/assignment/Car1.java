@@ -15,6 +15,6 @@ public class Car1 {
 		System.out.println(c.cost);
 		c.exchange(c);
 		System.out.println(c.brand);
-		System.out.println(c.cost ;
+		System.out.println(c.cost) ;
 	}
 }

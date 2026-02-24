@@ -23,6 +23,5 @@ public class MyStringBuffer {
 		
 		sb.trimToSize();
 		System.out.println(sb.capacity()); // 28
-		
 	}
 }

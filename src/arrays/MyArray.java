@@ -1,6 +1,6 @@
 package arrays;
 
-import sun.jvm.hotspot.utilities.IntArray;
+
 
 public class MyArray {
 	public static void main(String[] args) {
