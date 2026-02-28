@@ -1,4 +1,4 @@
-package StaticKeyword;
+package MyStaticKeyword;
 
 class MyStatic {
 	static int x;
