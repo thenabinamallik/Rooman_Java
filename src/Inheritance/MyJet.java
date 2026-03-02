@@ -2,8 +2,14 @@ package Inheritance;
 
 class Plane {
 	String className = this.getClass().getSimpleName();
-	public void takeOff(){System.out.println(className + " is taking off.");}
-	public void fly(){System.out.println(className + " is flying.");}
+
+	public void takeOff() {
+		System.out.println(className + " is taking off.");
+	}
+
+	public void fly() {
+		System.out.println(className + " is flying.");
+	}
 }
 
 class Airport {
@@ -13,26 +19,41 @@ class Airport {
 		System.out.println();
 	}
 }
-
+ 
 class CargoPlane extends Plane {
 	@Override
-	public void fly(){System.out.println(super.className + " fly at lower height");}
+	public void fly() {
+		System.out.println(this.className + " fly at lower height");
+	}
+
 	// Specialiesed method
-	public void carryCargo(){System.out.println("Carries Cargoses");}
+	public void carryCargo() {
+		System.out.println("Carries Cargoses");
+	}
 }
 
 class PassengerPlane extends Plane {
 	@Override
-	public void fly(){System.out.println(super.className + " fly at medium hight");}
+	public void fly() {
+		System.out.println(this.className + " fly at medium hight");
+	}
+
 	// Specialiesed method
-	public void carryPassenger(){System.out.println("Carries Passengers");}
+	public void carryPassenger() {
+		System.out.println("Carries Passengers");
+	}
 }
 
 class FighterPlain extends Plane {
 	@Override
-	public void fly(){System.out.println(super.className + " fly at greater hight");}
+	public void fly() {
+		System.out.println(this.className + " fly at greater hight");
+	}
+
 	// Specialiesed method
-	public void carryArms(){System.out.println("Carries Arms");}
+	public void carryArms() {
+		System.out.println("Carries Arms");
+	}
 }
 
 public class MyJet {
@@ -68,11 +89,10 @@ public class MyJet {
 //		plane = p;
 //		plane.fly(); // PassengerPlane fly at medium hight
 //		((PassengerPlane) plane).carryPassenger();
-		
+
 		Airport.permit(f);
 		Airport.permit(p);
 		Airport.permit(c);
-		
+
 	}
 }
-
