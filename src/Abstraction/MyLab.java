@@ -19,6 +19,6 @@ abstract class Calcy {
 
 public class MyLab {
 	public static void main(String[] args) {
-		Calcy cal = new Calcy();
+//		Calcy cal = new Calcy();
 	}
 }
