@@ -8,35 +8,43 @@ interface Atm {
 }
 
 class SBI implements Atm {
+	
+	String cn = this.getClass().getSimpleName();
 	@Override
 	public void withdraw() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the withdraw functionality");
+		System.out.println(cn + " bank has the withdraw functionality");
 	}
 	@Override
 	public void deposite() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the deposite functionality");
+		System.out.println(cn + " bank has the deposite functionality");
+	}
+	
+	public void specialROI() {
+		System.out.println(cn +" offers 8.5% ROI");
 	}
 }
 
 class CANARA implements Atm {
+	String cn = this.getClass().getSimpleName();
 	@Override
 	public void withdraw() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the withdraw functionality");
+		System.out.println(cn + " bank has the withdraw functionality");
 	}
 	@Override
 	public void deposite() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the deposite functionality");
+		System.out.println(cn + " bank has the deposite functionality");
 	}
 }
 
 class AXIS implements Atm {
+	String cn = this.getClass().getSimpleName();
 	@Override
 	public void withdraw() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the withdraw functionality");
+		System.out.println(cn + " bank has the withdraw functionality");
 	}
 	@Override
 	public void deposite() {
-		System.out.println(this.getClass().getSimpleName() + " bank has the deposite functionality");
+		System.out.println(cn + " bank has the deposite functionality");
 	}
 }
 
@@ -52,15 +60,19 @@ public class MyBank {
 		SBI sbi = new SBI();
 		sbi.deposite();
 		sbi.withdraw();
+		sbi.specialROI();
 		System.out.println();
+		
 		CANARA canara = new CANARA();
 		canara.deposite();
 		canara.withdraw();
 		System.out.println();
+		
 		AXIS axis = new AXIS();
 		axis.deposite();
 		axis.withdraw();
 		System.out.println();
+		
 		PlutonMall.getInstalled(sbi);
 		PlutonMall.getInstalled(axis); 
 		PlutonMall.getInstalled(canara); 
