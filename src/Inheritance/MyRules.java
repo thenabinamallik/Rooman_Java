@@ -3,10 +3,10 @@ package Inheritance;
 
 //Rule of Method Overriding =>
 //1. Child class overriden methods should maintain the same return typer as 
-// the parent method as per the primitive data type is considerd
+//   the parent method as per the primitive data type is considerd
 //2. Child class overriden method has to maintain the same access modifier 
-// as in the parent. If its needs to change it can increase the visibility 
-// but it canot decrease.
+//   as in the parent. If its needs to change it can increase the visibility 
+//   but it canot decrease.
 
 
 // Scope Increase             PRIVATE                     A 
@@ -40,6 +40,7 @@ class MyParent {
 		Animal a = new Animal();
 		return a;
 	}
+	
 }
 
 
@@ -51,10 +52,17 @@ class MyChild2 extends MyParent{
 //		System.out.println("a+b = "+(a+b));
 //		return a+b;
 //	}
+	
+//	@Override
+//	public Animal add() {
+//		Animal a1 = new Animal();
+//		return a1;
+//	}
+	
 	@Override
-	public Animal add() {
-		Animal a1 = new Animal();
-		return a1;
+	public Lion add() {
+		Lion l = new Lion();
+		return l;
 	}
 	
 }

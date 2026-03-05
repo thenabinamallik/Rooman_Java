@@ -1,5 +1,5 @@
 package Test;
-
+import utils.printUtils.sop;
 class A {
 	private void m1() {
 		System.out.println("m1() of A class");
@@ -26,5 +26,6 @@ class C {
 class D {
 	public static void main(String[] args) {
 		System.out.println("Inside main method");
+		sop()
 	}
 }
