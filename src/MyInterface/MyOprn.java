@@ -12,12 +12,12 @@ class Calci implements Calculator {
 	public void add() {
 		int a = 100;
 		int b = 200;
-		System.out.println("a+b " + (a + b));
+		System.out.println("a+b :" + (a + b));
 	}
 
 	public void sub() {
 		int a = 200, b = 100;
-		System.out.println("a-b " + (a - b));
+		System.out.println("a-b :" + (a - b));
 	}
 }
 
@@ -87,12 +87,12 @@ public class MyOprn {
 		SciCalci c2 = new SciCalci();
 		MathCalci c3 = new MathCalci();
 
-//		c1.add();
-//		c1.sub();
+		c1.add();
+		c1.sub();
 		System.out.println();
-//		c2.add();
-//		c2.sub();
-//		c3.add();
+		c2.add();
+		c2.sub();
+		c3.add();
 		c3.sub();
 		System.out.println();
 	}

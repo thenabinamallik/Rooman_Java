@@ -33,22 +33,55 @@ public class MyOrderExp {
 			int n = scan.nextInt();
 			int[] arr1 = new int[n];
 			sop("length of the array " + arr1.length);
-		} catch (InputMismatchException e) {
-			sop(e.getClass().getSimpleName() + ": Age cant be be string. Kindly, provide integer.");
-			sop("connection terminated gracefully");
-		} catch (ArithmeticException e) {
-			sop(e.getClass().getSimpleName() + ": denominator can't be zero, should be > 0,");
-			sop("Connection terminated");
-		} catch (IndexOutOfBoundsException e) {
-			sop(e.getClass().getSimpleName() + ": index should not be exceded 3");
-			sop("connection terminated");
-		} catch (NegativeArraySizeException e) {
-			sop(e.getClass().getSimpleName() + ": array length sholudnt be in -ve");
-			sop("connection terminated");
 		}
+//		catch (InputMismatchException e) {
+//			System.out.println("Age can not be string");
+//			}
+//		catch (ArithmeticException e) {
+//			System.out.println("Denominator cant be 0");
+//			}
+//		
+//		catch (ArrayIndexOutOfBoundsException e) {
+//			System.out.println("Try to access within ");
+//		}
+//		catch (NegativeArraySizeException e) {
+//			System.out.println("Kindly provide array size to positive integer");
+//			}
+//		catch (Exception e) {
+//			System.out.println("Kindly provide the right inputs");
+//			}
+//		
+//		System.out.println("Connection terminated gracefully");
+//	}
 		catch (Exception e) {
-			sop("Kindly provide the approprieat input");
+			String err = e.getClass().getSimpleName();
+			switch (err) {
+			case "InputMismatchException": {
+				sop(err+ ": Age cant be be string. Kindly, provide integer.");
+				sop("connection terminated gracefully");
+				break;
+			}
+			case "ArithmeticException": {
+				sop(err + ": denominator can't be zero, should be > 0,");
+				sop("Connection terminated");
+				break;
+			}
+			case "IndexOutOfBoundsException": {
+				sop(err+ ": index should not be exceded 3");
+				sop("connection terminated");
+				break;
+			}
+			case "NegativeArraySizeException": {
+				sop(err + ": array length sholudnt be in -ve");
+				sop("connection terminated");
+				break;
+			}
+			default:
+				sop("Kindly provide the approprieat input");
+				break;
+			}
+			sop("");
+			main(args);
 		}
 		scan.close();
-	}
-}
+	}}
