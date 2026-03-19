@@ -1,26 +1,27 @@
 package MyException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import static utils.printUtils.sop;
 
 class Demo3{
 	public void m3() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Connection4 established");
+		sop("Connection4 established");
 //		try {
-			System.out.println("Enter your age");
+			sop("Enter your age");
 			int age = scan.nextInt();
-			System.out.println("Age entered is "+age);
+			sop("Age entered is "+age);
 //		} catch (InputMismatchException e) {
 //			System.out.println("Input can't be String");
 //			System.out.println("Exepception handed in M3");
 //		}
-		System.out.println("Connection4 terminated");
+		sop("Connection4 terminated");
 	}
 }
 
 class Demo2{
 	public void m2() {
-		System.out.println("Connection3 established");
+		sop("Connection3 established");
 //		try {
 			Demo3 d3=new Demo3();
 			d3.m3();
@@ -34,25 +35,25 @@ class Demo2{
 
 class Demo1{
 	public void m1() {
-		System.out.println("Connection2 established");
+		sop("Connection2 established");
 		try {
 			Demo2 d2=new Demo2();
 			d2.m2();
 		} catch (InputMismatchException e) {
-			System.out.println("Input can't be String");
-			System.out.println("Exepception handed in M1");
+			sop("Input can't be String");
+			sop("Exepception handed in M1");
 		}
-		System.out.println("Connection2 terminated");
+		sop("Connection2 terminated");
 	}
 }
 
 public class MyExceptionProp {
 	public static void main(String[] args) {
-	System.out.println("Connection1 established");
+	sop("Connection1 established");
 	Demo1 d1=new Demo1();
 	d1.m1();
-	System.out.println("Connection1 terminated");
-	System.out.println();
+	sop("Connection1 terminated");
+	sop("");
 //	main(args);
 	}
 }

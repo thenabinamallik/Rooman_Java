@@ -1,5 +1,4 @@
 package Test;
-import utils.printUtils.sop;
 class A {
 	private void m1() {
 		System.out.println("m1() of A class");
@@ -19,13 +18,13 @@ class C {
 	private void m3() {
 		// TODO Auto-generated method stub
 		System.out.println("m3() of C class");
-		
+
 	}
 }
 
 class D {
 	public static void main(String[] args) {
 		System.out.println("Inside main method");
-		sop()
+		sop();
 	}
 }

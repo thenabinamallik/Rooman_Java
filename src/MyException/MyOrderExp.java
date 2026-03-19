@@ -77,6 +77,7 @@ public class MyOrderExp {
 				break;
 			}
 			default:
+				// Generic Exception
 				sop("Kindly provide the approprieat input");
 				break;
 			}
