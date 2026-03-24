@@ -22,6 +22,24 @@ class WhiteBoard implements Runnable{
 
 public class MySharedResources {
 	public static void main(String[] args) {
+		WhiteBoard whiteboard = new WhiteBoard();
+		
+		Thread t1 = new Thread(whiteboard);
+		Thread t2 = new Thread(whiteboard);
+		Thread t3 = new Thread(whiteboard);
+		
+		t1.setName("Java");
+		t2.setName("AWS");
+		t3.setName("Cyber");
+		
+		t1.setPriority(1);
+		t2.setPriority(9);
+		t3.setPriority(8);
+		
+		t1.start();
+		t2.start();
+		t3.start();
+		
 		
 	}
 }
