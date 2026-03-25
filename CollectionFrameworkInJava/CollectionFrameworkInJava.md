@@ -33,16 +33,11 @@ s[1] = new Customer(); //Compile-Time Error. Incompatible types. Found: Customer
 
 ```
 
-<<<<<<< HEAD
 
 Here, array `s` can hold only `Student` type objects.
 
 But, **we can solve this problem by using `Object` type arrays.**
 
-=======
-Here, array `s` can hold only `Student` type objects.
-But, **we can solve this problem by using `Object` type arrays.**
->>>>>>> 9c5bf657eaf16580099414467f320b94bd7c4e76
 	
 ```java
 Object [] a = new Object[10000];
