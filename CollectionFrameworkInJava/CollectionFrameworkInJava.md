@@ -187,7 +187,7 @@ In the above example, we have seen traversing ArrayList by Iterator. Let's see t
 
 ### Iterating Collection through for-each loop
 
-```
+```java
 import java.util.*;  
 class TestCollection2{  
  public static void main(String args[]){  
@@ -215,7 +215,7 @@ Ajay
 
 Let's see an example where we are storing Student class object in array list.
 
-```
+```java
 class Student{  
   int rollno;  
   String name;  
@@ -228,7 +228,7 @@ class Student{
 }
 ```
 
-```  
+```java 
 import java.util.*;  
 public class TestCollection3{  
  public static void main(String args[]){  
@@ -262,7 +262,7 @@ public class TestCollection3{
 
 ### Example of addAll(Collection c) method
 
-```
+```java
 import java.util.*;  
 class TestCollection4{  
  public static void main(String args[]){  
@@ -294,7 +294,7 @@ Hanumat
 
 ### Example of removeAll() method
 
-```
+```java
 import java.util.*;  
 class TestCollection5{  
  public static void main(String args[]){  
@@ -326,7 +326,7 @@ Ajay
 
 ### Example of retainAll() method
 
-```
+```java
 import java.util.*;  
 class TestCollection6{  
  public static void main(String args[]){  
@@ -380,7 +380,7 @@ In case of doubly linked list, we can add or remove elements from both side.
 
 ### LinkedList class declaration
 
-```
+```java
 public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable, Serializable
 ```
 
@@ -394,7 +394,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
 
 ### Java LinkedList Example: Book
 
-```
+```java
 import java.util.*;  
 class Book {  
 int id;  
@@ -448,7 +448,7 @@ But there are many differences between ArrayList and LinkedList classes that are
 
 ### Example of ArrayList and LinkedList in Java
 
-```
+```java
 import java.util.*;    
 class TestArrayLinked{    
  public static void main(String args[]){    
@@ -486,7 +486,7 @@ List Interface is the subinterface of Collection.It contains methods to insert a
 
 ### List Interface declaration
 
-```
+```java
 public interface List<E> extends Collection<E>  
 ```
 
@@ -496,7 +496,7 @@ public interface List<E> extends Collection<E>
 
 ### Java List Example
 
-```
+```java
 import java.util.*;  
 public class ListExample{  
 public static void main(String args[]){  
@@ -529,7 +529,7 @@ ListIterator Interface is used to traverse the element in backward and forward d
 
 ### ListIterator Interface declaration
 
-```
+```java
 public interface ListIterator<E> extends Iterator<E>  
 ```
 
@@ -672,7 +672,7 @@ The important points about Java LinkedHashSet class are:
 
 ### LinkedHashSet class declaration
 
-```
+```java
 public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, Serializable
 ```
 
@@ -682,7 +682,7 @@ public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, S
 
 ### Example of LinkedHashSet class
 
-```
+```java
 import java.util.*;  
 class TestCollection10{  
  public static void main(String args[]){  
@@ -725,7 +725,7 @@ The important points about Java TreeSet class are:
 
 ### TreeSet class declaration
 
-```
+```java
 public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Cloneable, Serializable 
 ```
 
@@ -739,7 +739,7 @@ public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Clone
 
 ### Java TreeSet Example
 
-```
+```java
 import java.util.*;  
 class TestCollection11{  
  public static void main(String args[]){  
@@ -774,7 +774,7 @@ Java Queue interface orders the element in FIFO(First In First Out) manner. In F
 
 ### Queue Interface declaration
 
-```
+```java
 public interface Queue<E> extends Collection<E>
 ```
 
@@ -788,13 +788,13 @@ The PriorityQueue class provides the facility of using queue. But it does not or
 
 ### PriorityQueue class declaration
 
-```
+```java
 public class PriorityQueue<E> extends AbstractQueue<E> implements Serializable  
 ```
 
 ### Java PriorityQueue Example
 
-```
+```java
 import java.util.*;  
 class TestCollection12{  
 public static void main(String args[]){  
@@ -847,7 +847,7 @@ Java Deque Interface is a linear collection that supports element insertion and 
 
 ### Deque Interface declaration
 
-```
+```java
 public interface Deque<E> extends Queue<E>  
 ```
 
@@ -873,13 +873,13 @@ The important points about ArrayDeque class are:
 
 ### ArrayDeque class declaration
 
-```
+```java
 public class ArrayDeque<E> extends AbstractCollection<E> implements Deque<E>, Cloneable, Serializable  
 ```
 
 ### Java ArrayDeque Example
 
-```
+```java
 import java.util.*;  
 public class ArrayDequeExample {  
    public static void main(String[] args) {  
@@ -906,7 +906,7 @@ Ajay
 
 ### Java ArrayDeque Example: offerFirst() and pollLast()
 
-```
+```java
 import java.util.*;  
 public class DequeExample {  
 public static void main(String[] args) {  
@@ -966,7 +966,7 @@ Entry is the sub interface of Map. So we will be accessed it by Map.Entry name. 
 
 ### Java Map Example: Generic (New Style)
 
-```
+```java
 import java.util.*;  
 class MapInterfaceExample{  
  public static void main(String args[]){  
@@ -991,7 +991,7 @@ class MapInterfaceExample{
 
 ### Java Map Example: Non-Generic (Old Style)
 
-```
+```java
 //Non-generic  
 import java.util.*;  
 public class MapExample1 {  
