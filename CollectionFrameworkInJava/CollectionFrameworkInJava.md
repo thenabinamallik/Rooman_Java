@@ -4,7 +4,7 @@
 
 If I need to represent three integer values, we go for:
 
-```
+```java
 int x = 10;
 int y = 20;
 int z = 30;
@@ -16,7 +16,7 @@ But, if I need to represent 10000 integer values, then declaring 10000 variable 
 
 We can represent 10000 values by a single variable, distinguished by their indexes. So, readablity of code improves.
 
-```
+```java
 Student [] s = new Student[10000];
 ```
 
@@ -26,19 +26,19 @@ Student [] s = new Student[10000];
 
 - Arrays can hold only homogeneous elements.
 
-```
+```java
 Student [] s = new Student[10000];
 s[0] = new Student();
 s[1] = new Customer(); //Compile-Time Error. Incompatible types. Found: Customer. Required: Student.
 ```
 
 
-	Here, array `s` can hold only `Student` type objects.
+Here, array `s` can hold only `Student` type objects.
 
-	But, **we can solve this problem by using `Object` type arrays.**
+But, **we can solve this problem by using `Object` type arrays.**
 
 	
-```
+```java
 Object [] a = new Object[10000];
 a[0] = new Student();
 a[1] = new Customer();
@@ -137,13 +137,13 @@ Java new generic collection allows you to have only one type of object in collec
 
 Let's see the old non-generic example of creating java collection:
 
-```
+```java
 ArrayList al=new ArrayList();//creating old non-generic arraylist
 ```
  
 Let's see the new generic example of creating java collection:
 
-```
+```java
 ArrayList<String> al=new ArrayList<String>();//creating new generic arraylist  
 ```
 
@@ -151,7 +151,7 @@ In generic collection, we specify the type in angular braces. Now ArrayList is f
 
 ### Java ArrayList Example
 
-```
+```java
 import java.util.*;  
 class TestCollection1{  
  public static void main(String args[]){  
@@ -189,7 +189,7 @@ In the above example, we have seen traversing ArrayList by Iterator. Let's see t
 
 ### Iterating Collection through for-each loop
 
-```
+```java
 import java.util.*;  
 class TestCollection2{  
  public static void main(String args[]){  
@@ -217,7 +217,7 @@ Ajay
 
 Let's see an example where we are storing Student class object in array list.
 
-```
+```java
 class Student{  
   int rollno;  
   String name;  
@@ -230,7 +230,7 @@ class Student{
 }
 ```
 
-```  
+```java
 import java.util.*;  
 public class TestCollection3{  
  public static void main(String args[]){  
@@ -264,7 +264,7 @@ public class TestCollection3{
 
 ### Example of addAll(Collection c) method
 
-```
+```java
 import java.util.*;  
 class TestCollection4{  
  public static void main(String args[]){  
@@ -296,7 +296,7 @@ Hanumat
 
 ### Example of removeAll() method
 
-```
+```java
 import java.util.*;  
 class TestCollection5{  
  public static void main(String args[]){  
@@ -328,7 +328,7 @@ Ajay
 
 ### Example of retainAll() method
 
-```
+```java
 import java.util.*;  
 class TestCollection6{  
  public static void main(String args[]){  
@@ -382,7 +382,7 @@ In case of doubly linked list, we can add or remove elements from both side.
 
 ### LinkedList class declaration
 
-```
+```java
 public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable, Serializable
 ```
 
@@ -396,7 +396,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
 
 ### Java LinkedList Example: Book
 
-```
+```java
 import java.util.*;  
 class Book {  
 int id;  
@@ -450,7 +450,7 @@ But there are many differences between ArrayList and LinkedList classes that are
 
 ### Example of ArrayList and LinkedList in Java
 
-```
+```java
 import java.util.*;    
 class TestArrayLinked{    
  public static void main(String args[]){    
@@ -488,7 +488,7 @@ List Interface is the subinterface of Collection.It contains methods to insert a
 
 ### List Interface declaration
 
-```
+```java
 public interface List<E> extends Collection<E>  
 ```
 
@@ -498,7 +498,7 @@ public interface List<E> extends Collection<E>
 
 ### Java List Example
 
-```
+```java
 import java.util.*;  
 public class ListExample{  
 public static void main(String args[]){  
@@ -531,7 +531,7 @@ ListIterator Interface is used to traverse the element in backward and forward d
 
 ### ListIterator Interface declaration
 
-```
+```java
 public interface ListIterator<E> extends Iterator<E>  
 ```
 
@@ -541,26 +541,26 @@ public interface ListIterator<E> extends Iterator<E>
 
 ### Example of ListIterator Interface
 
-```
+```java
 import java.util.*;  
 public class TestCollection8{  
-public static void main(String args[]){  
-ArrayList<String> al=new ArrayList<String>();  
-al.add("Amit");  
-al.add("Vijay");  
-al.add("Kumar");  
-al.add(1,"Sachin");  
-System.out.println("element at 2nd position: "+al.get(2));  
-ListIterator<String> itr=al.listIterator();  
-System.out.println("traversing elements in forward direction...");  
-while(itr.hasNext()){  
-System.out.println(itr.next());  
-}  
-System.out.println("traversing elements in backward direction...");  
-while(itr.hasPrevious()){  
-System.out.println(itr.previous());  
-}  
-}  
+    public static void main(String args[]){  
+        ArrayList<String> al=new ArrayList<String>();  
+        al.add("Amit");  
+        al.add("Vijay");  
+        al.add("Kumar");  
+        al.add(1,"Sachin");  
+        System.out.println("element at 2nd position: "+al.get(2));  
+        ListIterator<String> itr=al.listIterator();  
+        System.out.println("traversing elements in forward direction...");  
+        while(itr.hasNext()){  
+            System.out.println(itr.next());  
+        }  
+        System.out.println("traversing elements in backward direction...");  
+        while(itr.hasPrevious()){  
+            System.out.println(itr.previous());  
+        }  
+    }  
 }
 ```
 
