@@ -30,13 +30,19 @@ Student [] s = new Student[10000];
 Student [] s = new Student[10000];
 s[0] = new Student();
 s[1] = new Customer(); //Compile-Time Error. Incompatible types. Found: Customer. Required: Student.
+
 ```
 
+<<<<<<< HEAD
 
 Here, array `s` can hold only `Student` type objects.
 
 But, **we can solve this problem by using `Object` type arrays.**
 
+=======
+Here, array `s` can hold only `Student` type objects.
+But, **we can solve this problem by using `Object` type arrays.**
+>>>>>>> 9c5bf657eaf16580099414467f320b94bd7c4e76
 	
 ```java
 Object [] a = new Object[10000];
@@ -117,7 +123,7 @@ The important points about Java ArrayList class are:
 
 ### ArrayList class declaration
 
-```
+```java
 public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
 ```
 
@@ -230,7 +236,11 @@ class Student{
 }
 ```
 
+<<<<<<< HEAD
 ```java
+=======
+```java 
+>>>>>>> 9c5bf657eaf16580099414467f320b94bd7c4e76
 import java.util.*;  
 public class TestCollection3{  
  public static void main(String args[]){  
@@ -601,7 +611,7 @@ List can contain duplicate elements whereas Set contains unique elements only.
 
 ### HashSet class declaration
 
-```
+```java
 public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable
 ```
 
@@ -615,7 +625,7 @@ public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Ser
 
 ### Java HashSet Example: Book
 
-```
+```java
 import java.util.*;  
 class Book {  
 int id;  
@@ -674,7 +684,7 @@ The important points about Java LinkedHashSet class are:
 
 ### LinkedHashSet class declaration
 
-```
+```java
 public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, Serializable
 ```
 
@@ -684,7 +694,7 @@ public class LinkedHashSet<E> extends HashSet<E> implements Set<E>, Cloneable, S
 
 ### Example of LinkedHashSet class
 
-```
+```java
 import java.util.*;  
 class TestCollection10{  
  public static void main(String args[]){  
@@ -727,7 +737,7 @@ The important points about Java TreeSet class are:
 
 ### TreeSet class declaration
 
-```
+```java
 public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Cloneable, Serializable 
 ```
 
@@ -741,7 +751,7 @@ public class TreeSet<E> extends AbstractSet<E> implements NavigableSet<E>, Clone
 
 ### Java TreeSet Example
 
-```
+```java
 import java.util.*;  
 class TestCollection11{  
  public static void main(String args[]){  
@@ -776,7 +786,7 @@ Java Queue interface orders the element in FIFO(First In First Out) manner. In F
 
 ### Queue Interface declaration
 
-```
+```java
 public interface Queue<E> extends Collection<E>
 ```
 
@@ -790,13 +800,13 @@ The PriorityQueue class provides the facility of using queue. But it does not or
 
 ### PriorityQueue class declaration
 
-```
+```java
 public class PriorityQueue<E> extends AbstractQueue<E> implements Serializable  
 ```
 
 ### Java PriorityQueue Example
 
-```
+```java
 import java.util.*;  
 class TestCollection12{  
 public static void main(String args[]){  
@@ -849,7 +859,7 @@ Java Deque Interface is a linear collection that supports element insertion and 
 
 ### Deque Interface declaration
 
-```
+```java
 public interface Deque<E> extends Queue<E>  
 ```
 
@@ -875,13 +885,13 @@ The important points about ArrayDeque class are:
 
 ### ArrayDeque class declaration
 
-```
+```java
 public class ArrayDeque<E> extends AbstractCollection<E> implements Deque<E>, Cloneable, Serializable  
 ```
 
 ### Java ArrayDeque Example
 
-```
+```java
 import java.util.*;  
 public class ArrayDequeExample {  
    public static void main(String[] args) {  
@@ -908,7 +918,7 @@ Ajay
 
 ### Java ArrayDeque Example: offerFirst() and pollLast()
 
-```
+```java
 import java.util.*;  
 public class DequeExample {  
 public static void main(String[] args) {  
@@ -968,7 +978,7 @@ Entry is the sub interface of Map. So we will be accessed it by Map.Entry name. 
 
 ### Java Map Example: Generic (New Style)
 
-```
+```java
 import java.util.*;  
 class MapInterfaceExample{  
  public static void main(String args[]){  
@@ -993,7 +1003,7 @@ class MapInterfaceExample{
 
 ### Java Map Example: Non-Generic (Old Style)
 
-```
+```java
 //Non-generic  
 import java.util.*;  
 public class MapExample1 {  
@@ -1044,7 +1054,7 @@ The important points about Java HashMap class are:
 
 ### HashMap class declaration
 
-```
+```java
 public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializable
 ```
 
@@ -1063,7 +1073,7 @@ public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneabl
 
 ### Java HashMap Example
 
-```
+```java
 import java.util.*;  
 class TestCollection13{  
  public static void main(String args[]){  
@@ -1088,7 +1098,7 @@ class TestCollection13{
 
 ### Java HashMap Example: remove()
 
-```
+```java
 import java.util.*;  
 public class HashMapExample {  
    public static void main(String args[]) {  
@@ -1154,7 +1164,7 @@ public class LinkedHashMap<K,V> extends HashMap<K,V> implements Map<K,V>
 
 ### Java LinkedHashMap Example
 
-```
+```java
 import java.util.*;  
 class TestCollection14{  
  public static void main(String args[]){  
@@ -1182,7 +1192,7 @@ for(Map.Entry m:hm.entrySet()){
 
 ### Java LinkedHashMap Example:remove()
 
-```
+```java
 import java.util.*;  
 public class LinkedHashMapExample {  
    public static void main(String args[]) {  
@@ -1225,7 +1235,7 @@ The important points about Java TreeMap class are:
 
 ### TreeMap class declaration
 
-```
+```java
 public class TreeMap<K,V> extends AbstractMap<K,V> implements NavigableMap<K,V>, Cloneable, Serializable
 ```
  
@@ -1244,7 +1254,7 @@ public class TreeMap<K,V> extends AbstractMap<K,V> implements NavigableMap<K,V>,
 
 ### Java TreeMap Example:
 
-```
+```java
 import java.util.*;  
 class TestCollection15{  
  public static void main(String args[]){  
@@ -1271,7 +1281,7 @@ class TestCollection15{
 
 ### Java TreeMap Example: remove()
 
-```
+```java
 import java.util.*;  
 public class TreeMapExample {  
    public static void main(String args[]) {  
@@ -1314,7 +1324,7 @@ The important points about Java Hashtable class are:
 
 ### Hashtable class declaration
 
-```
+```java
 public class Hashtable<K,V> extends Dictionary<K,V> implements Map<K,V>, Cloneable, Serializable  
 ```
 
@@ -1333,7 +1343,7 @@ public class Hashtable<K,V> extends Dictionary<K,V> implements Map<K,V>, Cloneab
 
 ### Java Hashtable Example
 
-```
+```java
 import java.util.*;  
 class TestCollection16{  
  public static void main(String args[]){  
@@ -1362,7 +1372,7 @@ class TestCollection16{
     
 ### Java Hashtable Example: remove()
 
-```
+```java
 import java.util.*;  
 public class HashtableExample {  
    public static void main(String args[]) {  
@@ -1418,7 +1428,7 @@ public abstract class EnumSet<E extends Enum<E>> extends AbstractSet<E> implemen
 
 ### Java EnumSet Example
 
-```
+```java
 import java.util.*;  
 enum days {  
   SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  
@@ -1443,7 +1453,7 @@ WEDNESDAY
 
 ### Java EnumSet Example: allOf() and noneOf()
 
-```
+```java
 import java.util.*;  
 enum days {  
   SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  
@@ -1477,7 +1487,7 @@ Java EnumMap class is the specialized Map implementation for enum keys. It inher
 
 ### EnumMap class declaration
 
-```
+```java
 public class EnumMap<K extends Enum<K>,V> extends AbstractMap<K,V> implements Serializable, Cloneable
 ```
 
@@ -1496,7 +1506,7 @@ public class EnumMap<K extends Enum<K>,V> extends AbstractMap<K,V> implements Se
 
 ### Java EnumMap Example
 
-```
+```java
 import java.util.*;  
 public class EnumMapExample {  
    // create an enum  
@@ -1540,7 +1550,7 @@ The important points about Java Collections class are:
 
 ### Collections class declaration
 
-```
+```java
 public class Collections extends Object
 ```
 
@@ -1550,7 +1560,7 @@ public class Collections extends Object
 
 ### Java Collections Example
 
-```
+```java
 import java.util.*;  
 public class CollectionsExample {  
     public static void main(String a[]){      
@@ -1578,7 +1588,7 @@ After adding array collection value:[C, Core Java, Advance Java, Servlet, JSP, C
 
 ### Java Collections Example: max()
 
-```
+```java
 import java.util.*;  
 public class CollectionsExample {  
     public static void main(String a[]){         
@@ -1602,7 +1612,7 @@ Value of maximum element from the collection: 67
 
 ### Java Collections Example: min()
 
-```
+```java
 import java.util.*;  
 public class CollectionsExample {  
     public static void main(String a[]){         
@@ -1644,7 +1654,7 @@ We can sort the elements of:
 
 ### Example of Sorting the elements of List that contains string objects
 
-```
+```java
 import java.util.*;  
 class TestSort1{  
 public static void main(String args[]){  
@@ -1675,7 +1685,7 @@ Viru
     
 ### Example of Sorting the elements of List that contains Wrapper class objects
 
-```
+```java
 import java.util.*;  
 class TestSort2{  
 public static void main(String args[]){  
@@ -1731,7 +1741,7 @@ We can sort the elements of:
 
 ### Java Comparable Example
 
-```
+```java
 class Student implements Comparable<Student>{  
 int rollno;  
 String name;  
@@ -1753,7 +1763,7 @@ return -1;
 }
 ```
 
-```
+```java
 import java.util.*;  
 import java.io.*;  
 public class TestSort3{  
@@ -1803,78 +1813,78 @@ It provides multiple sorting sequence i.e. you can sort the elements on the basi
 
 ### Java Comparator Example (Non-generic Style)
 
-```
+```java
 class Student{  
-int rollno;  
-String name;  
-int age;  
-Student(int rollno,String name,int age){  
-this.rollno=rollno;  
-this.name=name;  
-this.age=age;  
-}  
+    int rollno;  
+    String name;  
+    int age;  
+    Student(int rollno,String name,int age){  
+        this.rollno=rollno;  
+        this.name=name;  
+        this.age=age;  
+    }  
 }
 ```
 
-```
+```java
 import java.util.*;  
 class AgeComparator implements Comparator{  
-public int compare(Object o1,Object o2){  
-Student s1=(Student)o1;  
-Student s2=(Student)o2;  
+    public int compare(Object o1,Object o2){  
+        Student s1=(Student)o1;  
+        Student s2=(Student)o2;  
   
-if(s1.age==s2.age)  
-return 0;  
-else if(s1.age>s2.age)  
-return 1;  
-else  
-return -1;  
-}  
+        if(s1.age==s2.age){ 
+            return 0;  
+        } else if(s1.age>s2.age) { 
+            return 1;  
+        } else { 
+            return -1;  
+        }  
 } 
 ```
 
-```
+```java
 import java.util.*;  
 class NameComparator implements Comparator{  
-public int compare(Object o1,Object o2){  
-Student s1=(Student)o1;  
-Student s2=(Student)o2;  
+    public int compare(Object o1,Object o2){  
+        Student s1=(Student)o1;  
+        Student s2=(Student)o2;  
   
-return s1.name.compareTo(s2.name);  
-}  
+        return s1.name.compareTo(s2.name);  
+    }  
 }
 ```
 
-```
+```java
 import java.util.*;  
 import java.io.*;  
   
 class Simple{  
 public static void main(String args[]){  
   
-ArrayList al=new ArrayList();  
-al.add(new Student(101,"Vijay",23));  
-al.add(new Student(106,"Ajay",27));  
-al.add(new Student(105,"Jai",21));  
+        ArrayList al=new ArrayList();  
+        al.add(new Student(101,"Vijay",23));  
+        al.add(new Student(106,"Ajay",27));  
+        al.add(new Student(105,"Jai",21));  
   
-System.out.println("Sorting by Name...");  
+        System.out.println("Sorting by Name...");  
   
-Collections.sort(al,new NameComparator());  
-Iterator itr=al.iterator();  
-while(itr.hasNext()){  
-Student st=(Student)itr.next();  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
-}  
+        Collections.sort(al,new NameComparator());  
+        Iterator itr=al.iterator();  
+        while(itr.hasNext()){  
+            Student st=(Student)itr.next();  
+            System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }  
   
-System.out.println("sorting by age...");  
+        System.out.println("sorting by age...");  
   
-Collections.sort(al,new AgeComparator());  
-Iterator itr2=al.iterator();  
-while(itr2.hasNext()){  
-Student st=(Student)itr2.next();  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
-}
-}  
+        Collections.sort(al,new AgeComparator());  
+        Iterator itr2=al.iterator();  
+        while(itr2.hasNext()){  
+            Student st=(Student)itr2.next();  
+            System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }
+    }  
 }
 ```
 
@@ -1894,68 +1904,68 @@ Sorting by age...
 
 ### Java Comparator Example (Generic Style)
 
-```
+```java
 class Student{  
-int rollno;  
-String name;  
-int age;  
-Student(int rollno,String name,int age){  
-this.rollno=rollno;  
-this.name=name;  
-this.age=age;  
-}  
+    int rollno;  
+    String name;  
+    int age;  
+    Student(int rollno,String name,int age){  
+        this.rollno=rollno;  
+        this.name=name;  
+        this.age=age;  
+    }  
 }
 ```
 
-```
+```java
 import java.util.*;  
 class AgeComparator implements Comparator<Student>{  
-public int compare(Student s1,Student s2){  
-if(s1.age==s2.age)  
-return 0;  
-else if(s1.age>s2.age)  
-return 1;  
-else  
-return -1;  
-}  
+    public int compare(Student s1,Student s2){  
+        if(s1.age==s2.age){ 
+            return 0;
+        } else if(s1.age>s2.age){  
+            return 1;  
+        }else { 
+            return -1;  
+        }
+    }  
 }
 ```
 
-```
+```java
 import java.util.*;  
 class NameComparator implements Comparator<Student>{  
-public int compare(Student s1,Student s2){  
-return s1.name.compareTo(s2.name);  
-}  
+    public int compare(Student s1,Student s2){  
+        return s1.name.compareTo(s2.name);  
+    }  
 }
 ```
 
-```
+```java
 import java.util.*;  
 import java.io.*;  
 class Simple{  
-public static void main(String args[]){  
+    public static void main(String args[]){  
   
-ArrayList<Student> al=new ArrayList<Student>();  
-al.add(new Student(101,"Vijay",23));  
-al.add(new Student(106,"Ajay",27));  
-al.add(new Student(105,"Jai",21));  
+        ArrayList<Student> al=new ArrayList<Student>();  
+        al.add(new Student(101,"Vijay",23));  
+        al.add(new Student(106,"Ajay",27));  
+        al.add(new Student(105,"Jai",21));  
   
-System.out.println("Sorting by Name...");  
+        System.out.println("Sorting by Name...");  
   
-Collections.sort(al,new NameComparator());  
-for(Student st: al){  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
-}  
+        Collections.sort(al,new NameComparator());  
+        for(Student st: al){  
+            System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }  
   
-System.out.println("sorting by age...");  
+        System.out.println("sorting by age...");  
   
-Collections.sort(al,new AgeComparator());  
-for(Student st: al){  
-System.out.println(st.rollno+" "+st.name+" "+st.age);  
-}  
-  
-}  
+        Collections.sort(al,new AgeComparator());  
+        for(Student st: al){  
+            System.out.println(st.rollno+" "+st.name+" "+st.age);  
+        }  
+    }  
 }
 ```
 
@@ -1985,7 +1995,7 @@ But there are many differences between ArrayList and Vector classes that are giv
 
 ### Example of Java ArrayList
 
-```
+```java
 import java.util.*;    
 class TestArrayList21{    
  public static void main(String args[]){    
@@ -2015,7 +2025,7 @@ Andy
 
 ### Example of Java Vector
 
-```
+```java
 import java.util.*;      
 class TestVector1{      
  public static void main(String args[]){      

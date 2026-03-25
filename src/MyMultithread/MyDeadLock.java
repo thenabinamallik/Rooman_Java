@@ -1,6 +1,6 @@
 package MyMultithread;
 
-class Rooman implements Runnable {
+class BPUT extends Thread {
     String res1 = "JAVACLsROOM";
     String res2 = "AWSCLsROOM";
 
@@ -49,10 +49,10 @@ class Rooman implements Runnable {
 
 public class MyDeadLock {
     public static void main(String[] args) {
-        Rooman r = new Rooman();
+        BPUT b = new BPUT();
 
-        Thread t1 = new Thread(r);
-        Thread t2 = new Thread(r);
+        Thread t1 = new Thread(b);
+        Thread t2 = new Thread(b);
 
         t1.setName("JAVATRAINER");
         t2.setName("AWSTRAINER");
