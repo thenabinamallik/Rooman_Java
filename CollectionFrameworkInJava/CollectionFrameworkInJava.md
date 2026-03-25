@@ -4,7 +4,7 @@
 
 If I need to represent three integer values, we go for:
 
-```
+```java
 int x = 10;
 int y = 20;
 int z = 30;
@@ -16,7 +16,7 @@ But, if I need to represent 10000 integer values, then declaring 10000 variable 
 
 We can represent 10000 values by a single variable, distinguished by their indexes. So, readablity of code improves.
 
-```
+```java
 Student [] s = new Student[10000];
 ```
 
@@ -26,19 +26,17 @@ Student [] s = new Student[10000];
 
 - Arrays can hold only homogeneous elements.
 
-```
+```java
 Student [] s = new Student[10000];
 s[0] = new Student();
 s[1] = new Customer(); //Compile-Time Error. Incompatible types. Found: Customer. Required: Student.
+
 ```
 
-
-	Here, array `s` can hold only `Student` type objects.
-
-	But, **we can solve this problem by using `Object` type arrays.**
-
+Here, array `s` can hold only `Student` type objects.
+But, **we can solve this problem by using `Object` type arrays.**
 	
-```
+```java
 Object [] a = new Object[10000];
 a[0] = new Student();
 a[1] = new Customer();
@@ -117,7 +115,7 @@ The important points about Java ArrayList class are:
 
 ### ArrayList class declaration
 
-```
+```java
 public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
 ```
 
@@ -137,13 +135,13 @@ Java new generic collection allows you to have only one type of object in collec
 
 Let's see the old non-generic example of creating java collection:
 
-```
+```java
 ArrayList al=new ArrayList();//creating old non-generic arraylist
 ```
  
 Let's see the new generic example of creating java collection:
 
-```
+```java
 ArrayList<String> al=new ArrayList<String>();//creating new generic arraylist  
 ```
 
@@ -151,7 +149,7 @@ In generic collection, we specify the type in angular braces. Now ArrayList is f
 
 ### Java ArrayList Example
 
-```
+```java
 import java.util.*;  
 class TestCollection1{  
  public static void main(String args[]){  
@@ -541,7 +539,7 @@ public interface ListIterator<E> extends Iterator<E>
 
 ### Example of ListIterator Interface
 
-```
+```java
 import java.util.*;  
 public class TestCollection8{  
 public static void main(String args[]){  
@@ -615,7 +613,7 @@ public class HashSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Ser
 
 ### Java HashSet Example: Book
 
-```
+```java
 import java.util.*;  
 class Book {  
 int id;  
