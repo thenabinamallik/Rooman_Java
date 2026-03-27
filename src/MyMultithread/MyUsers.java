@@ -8,7 +8,6 @@ class MyMainThreadUtils extends Thread{
 				Thread.sleep(1000);
 				System.out.println("Main Activaty Exicuting");
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -18,10 +17,10 @@ class MyMainThreadUtils extends Thread{
 class MyDemo extends Thread {
 	@Override
 	public void run() {
-		for (;;) {
+		while(true) {
 			try {
 				Thread.sleep(1000);
-				System.out.println("Daemon Thread supporing main task"+);
+				System.out.println("Daemon Thread supporing main task");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
